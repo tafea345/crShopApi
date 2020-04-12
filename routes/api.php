@@ -13,3 +13,7 @@ Route::apiResource('/products', 'ProductController');
 Route::group(['prefix' => 'products'], function () {
     Route::apiResource('/{product}/reviews', 'ReviewController');
 });
+
+Route::get('test', function () {
+    return 'test';
+});
